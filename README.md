@@ -2,6 +2,8 @@
 
 This project demonstrates an interactive visualization of a social network using D3.js. As a Technical Product Manager with expertise in data visualization and web development, I created this tool to showcase complex network relationships in an intuitive and engaging manner.
 
+Here is a live-demo version which you can interact with (click the pink "Click here to begin!" button): https://allan28782.gitlab.io/user_graph/
+
 ## Project Overview
 
 This visualization represents a Facebook user's friend network, highlighting the interplay between natural friend clusters and user-defined friend lists. Key features include:
