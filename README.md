@@ -1,64 +1,57 @@
-Example plain HTML site using GitLab Pages.
+# Interactive Social Network Visualization
 
-Learn more about GitLab Pages at https://pages.gitlab.io and the official
-documentation https://docs.gitlab.com/ce/user/project/pages/.
+This project demonstrates an interactive visualization of a social network using D3.js. As a Technical Product Manager with expertise in data visualization and web development, I created this tool to showcase complex network relationships in an intuitive and engaging manner.
 
----
+## Project Overview
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+This visualization represents a Facebook user's friend network, highlighting the interplay between natural friend clusters and user-defined friend lists. Key features include:
 
-- [GitLab CI](#gitlab-ci)
-- [GitLab User or Group Pages](#gitlab-user-or-group-pages)
-- [Did you fork this project?](#did-you-fork-this-project)
-- [Troubleshooting](#troubleshooting)
+- Force-directed graph layout for natural clustering
+- Color-coded nodes representing user-defined friend lists
+- Interactive elements for exploring network relationships
+- Narrative-driven introduction with annotations
+- Responsive design for various screen sizes
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+## Key Features
 
-## GitLab CI
+- **D3.js Visualization**: Utilizes D3.js for creating a force-directed graph layout.
+- **Interactive Elements**: Allows users to hover over and drag nodes to explore relationships.
+- **Narrative Introduction**: Guides users through key insights with annotated scenes.
+- **Dynamic Legend**: Highlights specific friend lists on interaction.
+- **Responsive Design**: Adapts to different screen sizes for optimal viewing.
 
-This project's static Pages are built by [GitLab CI][ci], following the steps
-defined in [`.gitlab-ci.yml`](.gitlab-ci.yml):
+## Technologies Used
 
-```
-image: busybox
+- D3.js for data visualization
+- HTML5 and CSS3 for structure and styling
+- JavaScript for interactivity and data manipulation
+- GitLab CI/CD for continuous deployment
 
-pages:
-  stage: deploy
-  script:
-  - echo 'Nothing to do...'
-  artifacts:
-    paths:
-    - public
-    expire_in: 1 day
-  rules:
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
-```
+## How to Use
 
-The above example expects to put all your HTML files in the `public/` directory.
+1. Clone the repository
+2. Open `index.html` in a modern web browser
+3. Follow the narrative introduction or skip to explore the network freely
 
-## GitLab User or Group Pages
+## Project Structure
 
-To use this project as your user/group website, you will need one additional
-step: just rename your project to `namespace.gitlab.io`, where `namespace` is
-your `username` or `groupname`. This can be done by navigating to your
-project's **Settings**.
+- `index.html`: Main HTML file
+- `style.css`: CSS styles for the visualization
+- `data.json` and `nodes.json`: Data files for the social network
+- `d3.v5.min.js` and `d3-annotation.min.js`: D3.js libraries
+- `.gitlab-ci.yml`: GitLab CI/CD configuration
 
-Read more about [user/group Pages][userpages] and [project Pages][projpages].
+## Future Enhancements
 
-## Did you fork this project?
+- Implement data input functionality for custom network visualization
+- Add more advanced network analysis features (e.g., centrality measures)
+- Develop a back-end API for dynamic data retrieval
+- Create additional visualization types (e.g., hierarchical, radial)
 
-If you forked this project for your own use, please go to your project's
-**Settings** and remove the forking relationship, which won't be necessary
-unless you want to contribute back to the upstream project.
+## About Me
 
-## Troubleshooting
+I'm a Technical Product Manager with a Master's in Computer Science from the University of Illinois at Urbana-Champaign. My expertise includes data visualization, web development, and AI/ML applications. This project demonstrates my ability to create complex, interactive data visualizations and my understanding of social network dynamics.
 
-1. CSS is missing! That means that you have wrongly set up the CSS URL in your
-   HTML files. Have a look at the [index.html] for an example.
+https://www.linkedin.com/in/allannev/
 
-[ci]: https://about.gitlab.com/gitlab-ci/
-[index.html]: https://gitlab.com/pages/plain-html/blob/master/public/index.html
-[userpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#user-or-group-pages
-[projpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#project-pages
+Feel free to explore the visualization and reach out if you have any questions or would like to discuss potential collaborations!
